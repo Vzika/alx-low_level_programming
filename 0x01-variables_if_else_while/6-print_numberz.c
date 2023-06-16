@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
   *main - Entry point
-  *Description: 'to print alphabets lowercase and uppercase'
-  *Return: always 0
+  *Description: 'to print number of base 10 using putchar'
+  *Return: Always 0
   */
 int main(void)
 {
