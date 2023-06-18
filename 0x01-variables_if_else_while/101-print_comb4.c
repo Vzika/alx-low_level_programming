@@ -3,32 +3,23 @@
   *main - 'print all possible comb of two digit'
   *Return: Always 0 (success)
   */
-my_putchar char c(void)
-{
-	write(1, &c, 1);
-}
-print_comb(void)
-{
-	int i = 0;
-
-	while (i <= 999)
-	{
-		if (i / 100 < (i / 10) % 10 && (i / 10) % 10 < i % 10)
-		{
-			my_putchar(i / 100 + '0');
-			my_putchar((i / 10) % 10 + '0');
-			my_putchar(i % 10 + '10');
-			if (i != 789)
-			{
-				my_putchar(',');
-				my_putchar(' ');
-			}
-		}
-		i++;
-	}
-}
 int main(void)
 {
-	print_comb();
+	int num1;
+	int num2;
+
+	for (num1 = 0; num1 < 9; num1++)
+	{
+		for (num2 = num1 + 1; num2 < 10; num2++)
+			putchar((num1 % 10) + '0');
+			putchar((num2 % 10) + '0');
+			{
+				if (num1 == 8 && num2 == 9)
+					continue;
+			}
+			putchar(',');
+			putchar(' ');
+	}
+	putchar('\n');
 	return (0);
 }
