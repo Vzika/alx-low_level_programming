@@ -4,7 +4,7 @@
 /**
  *main - Entry point
  *Description: 'To print the last number'
- *Return: always 0
+ *Return: Always 0
  */
 int main(void)
 {
@@ -16,15 +16,16 @@ int main(void)
 	ld = n % 10;
 	if (ld > 5)
 	{
-		printf("last digit of %d is %d and is greater than 5\n", n, ld);
+		printf("greater than 5");
 	}
 	else if (ld == 0)
 	{
-		printf("last digit of %d is %d and is 0\n", n, ld);
+		printf("0");
 	}
 	else
 	{
-		printf("last digit of %d is %d and is less than 6 and not 0\n", n, ld);
+		printf("less than 6 and not 0");
 	}
+	printf("\n");
 	return (0);
 }
