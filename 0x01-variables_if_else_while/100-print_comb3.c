@@ -1,34 +1,28 @@
 #include <stdio.h>
 /**
   *main - Entry point
-  *Description: 'to print comb num'
+  *Description: 'to print all possible comb num'
+  *Return:Always 0 (success)
   */
 int main(void)
 {
-	int i =0;
-	while (i < 100)
+	int num1;
+	int num2;
+
+	for (num1 = '0'; num1 < '9'; num1++)
 	{
-		int j = i + 1;
-		while (j < 100)
+		for (num2 = num1 + 1; num2 < 10; num2++)
 		{
-			if (i / 10 != i % && j / 10 !=j % 10 && i < j)
+			putchar((num1 % 10) + '0');
+			putchar((num2 % 10) + '0');
+			if (num1 == 8 && num2 == 9)
+				continue;
 			{
-				putchart(i / 10 + '10');
-				putchar(i % 10 + '0');
 				putchar(',');
 				putchar(' ');
-				putchar(j / 10 + '0');
-				putchar(j % 10 + '0');
-				if (i != 98 || j != 99)
-				{
-					putchar(',');
-					putchar(' ');
-				}
 			}
-			j++;
 		}
-		i++;
 	}
-	return 0;
-
+	putchar('\n');
+	return (0);
 }
