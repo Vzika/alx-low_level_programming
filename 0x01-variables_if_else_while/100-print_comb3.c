@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
-  *main - Entry point
-  *Description: 'to print all possible comb num'
-  *Return:Always 0 (success)
+  * main - to print all possible combination of two digit
+  *
+  * Return:Always 0 (success)
   */
 int main(void)
 {
