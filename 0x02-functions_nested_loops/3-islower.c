@@ -1,9 +1,11 @@
 include "main.h"
 /**
-  * _islower - shows 1 if the imput is lowcase character,another case shows 0
+  * _islower - shows 1 if the imput is a
+  * lowcase character,another case shows
+  *0
   *
   * @c: The character is ASCII code
-  * Return: 1 for the lowercase chara.0 for the rest
+  * Return: 1 for the lowercase character.0 for the rest
   */
 int _islower(int c)
 {
