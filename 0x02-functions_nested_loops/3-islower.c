@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
   * _islower - check if char is lowercase
   *@c: The character is ASCII code
