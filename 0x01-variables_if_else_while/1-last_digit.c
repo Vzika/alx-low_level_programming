@@ -1,31 +1,22 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
+
 /**
- *main - Entry point
- *Description: 'To print the last number'
- *Return: Always 0
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int n;
-	int ld;
+	char c;
+	int i;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	ld = n % 10;
-	if (ld > 5)
+	i = 0;
+	c = 'z';
+	while (i < 26)
 	{
-		printf("greater than 5");
+		putchar(c - i);
+		i++;
 	}
-	else if (ld == 0)
-	{
-		printf("0");
-	}
-	else
-	{
-		printf("less than 6 and not 0");
-	}
-	printf("\n");
+	putchar(10);
 	return (0);
 }
