@@ -1,5 +1,3 @@
-5-string_toupper.c
-
 #include "main.h"
 /**
  * string_toupper - change all lowercase to uppercase
