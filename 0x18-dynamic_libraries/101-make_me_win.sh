@@ -1,3 +1,3 @@
 #!/bin/bash
-wget -P .. https://raw. githubusercontent.com/Vzika/alx-low_level_programming/master/0x18-dynamic_libraries/libfunc.so
-export LD_PRELOAD="$PWD/../libfunc.so"
+gcc -shared -o libfunc.so -fPIC func.c
+export LD_PRELOAD=./libfunc.so:$LD_LIBRARY_PATH
